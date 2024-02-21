@@ -15,7 +15,7 @@ function App() {
 
   const handleDelete = (item) => {
     console.log(item);
-    let newResult = items.filter((items) => item != items.name);
+    let newResult = items.filter((value) => value.name != item);
     setItems(newResult);
   };
   return (
